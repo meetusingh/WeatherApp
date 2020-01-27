@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context=".DetailedWeatherFragment"
+                                             android:id="@+id/detailedWeatherLayout">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="27 Jan 2020"
+            android:textSize="20sp"/>
+
+    <ImageView
+            android:src="@drawable/ic_cloudy_day_weather_svgrepo_com"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintWidth_percent="0.3"
+            app:layout_constraintHeight_percent="0.3"
+            android:id="@+id/weatherImage"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/date"/>
+
+    <TextView
+            android:text="6 AM"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:id="@+id/weatherMorning"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weatherImage"
+            android:layout_marginStart="50dp"/>
+
+    <TextView
+            android:text="12 PM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/weatherAfternoon"
+            app:layout_constraintLeft_toRightOf="@+id/weatherMorning"
+            app:layout_constraintTop_toBottomOf="@+id/weatherImage"
+            android:layout_marginStart="50dp"/>
+
+    <TextView
+            android:text="6 PM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/weatherEvening"
+            app:layout_constraintLeft_toRightOf="@+id/weatherAfternoon"
+            app:layout_constraintTop_toBottomOf="@+id/weatherImage"
+            android:layout_marginStart="50dp"/>
+    <TextView
+            android:text="12 AM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/weatherNight"
+            app:layout_constraintLeft_toRightOf="@+id/weatherEvening"
+            app:layout_constraintTop_toBottomOf="@+id/weatherImage"
+            android:layout_marginStart="50dp"/>
+
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/weatherMorningValue"
+            app:layout_constraintTop_toBottomOf="@+id/weatherMorning"
+            app:layout_constraintLeft_toLeftOf="@+id/weatherMorning"/>
+
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/weatherAfternoon"
+            app:layout_constraintLeft_toLeftOf="@+id/weatherAfternoon"/>
+
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/weatherEvening"
+            app:layout_constraintLeft_toLeftOf="@+id/weatherEvening"/>
+
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/weatherNight"
+            app:layout_constraintLeft_toLeftOf="@+id/weatherNight"/>
+
+</android.support.constraint.ConstraintLayout>
